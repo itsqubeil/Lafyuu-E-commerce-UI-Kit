@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginact"
+    tools:layout_editor_absoluteX="-10dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginicon" />
+
+    <TextView
+        android:id="@+id/welcum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Welcome To Lafyuu"
+        android:textColor="#223263"
+        android:textColorLink="#223263"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="416dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="OR"
+        android:textColor="#9098B1"
+        android:textColorLink="#223263"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="632dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Register"
+        android:textColor="#40BFFF"
+        android:textColorLink="#223263"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/yahahagapunyakun"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="596dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Forgot Password?"
+        android:textColor="#40BFFF"
+        android:textColorLink="#223263"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yahahagapunyakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="632dp"
+        android:fontFamily="@font/poppins_extralight"
+        android:text="Dont have an account? "
+        android:textColor="#9098B1"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="184dp"
+        android:fontFamily="@font/poppins_extralight"
+        android:text="Sign in to contunue"
+        android:textColor="#9098B1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="Your Email"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text=""
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/lock"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="460dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableLeft="@drawable/gulugele"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="LOGIN WITH GOOGLE"
+        android:textColor="#9098B1"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/epbih"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableLeft="@drawable/fb"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="LOGIN WITH FACEBOOK"
+        android:textColor="#9098B1"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="352dp"
+        android:backgroundTint="#40BFFF"
+        android:text="Button"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--        android:backgroundTint="@android:color/transparent"-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

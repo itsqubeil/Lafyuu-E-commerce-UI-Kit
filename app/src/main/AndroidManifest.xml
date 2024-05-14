@@ -13,17 +13,24 @@
         android:theme="@style/Theme.Lafyuudaffaian"
         tools:targetApi="31">
         <activity
-            android:name=".loginact"
+            android:name=".index"
+            android:exported="false" />
+        <activity
+            android:name=".Loginact"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".registeract"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".splashac"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

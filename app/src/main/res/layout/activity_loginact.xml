@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginact"
+    tools:context=".Loginact"
     tools:layout_editor_absoluteX="-10dp"
     tools:layout_editor_absoluteY="0dp">
 
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/reg"
+        android:id="@+id/log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/SearcH"
         android:layout_width="343dp"
         android:layout_height="48dp"
         android:layout_marginTop="228dp"
@@ -174,7 +174,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="352dp"
         android:backgroundTint="#40BFFF"
-        android:text="Button"
+        android:text="Sign In"
         app:cornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

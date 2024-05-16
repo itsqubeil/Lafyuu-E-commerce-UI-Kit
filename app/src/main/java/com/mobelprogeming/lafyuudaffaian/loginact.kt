@@ -2,6 +2,7 @@ package com.mobelprogeming.lafyuudaffaian
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,11 @@ class Loginact : AppCompatActivity() {
         val reg = findViewById<TextView>(R.id.log)
         reg.setOnClickListener{
             val intent = Intent(this, registeract::class.java)
+            startActivity(intent)
+        }
+        val main = findViewById<Button>(R.id.button)
+        main.setOnClickListener{
+            val intent = Intent(this, index::class.java)
             startActivity(intent)
         }
     }

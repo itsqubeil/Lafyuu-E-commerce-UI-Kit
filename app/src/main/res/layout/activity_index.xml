@@ -11,22 +11,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="-10sp"
             android:layout_marginRight="15dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_marginBottom="10sp"
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/SearcH"
@@ -38,9 +33,9 @@
                 android:background="@drawable/border"
                 android:drawableStart="@drawable/searc"
                 android:ems="10"
-                android:paddingStart="10dp"
                 android:hint="   Search Product"
                 android:inputType="text"
+                android:paddingStart="10dp"
                 android:text=""
                 android:textSize="13sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -73,493 +68,1121 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="250dp"
-
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            app:srcCompat="@drawable/flashsale" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="180dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/slde" />
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/kategioru"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Category"
-                android:textColor="#223263"
-                android:textColorLink="#223263"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.049"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/morkat2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/poppins_bold"
-                android:gravity="right"
-                android:text="More Category"
-                android:textColor="#40BFFF"
-                android:textColorLink="#223263"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.947"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </LinearLayout>
-
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:scrollbars="none"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/flashsale" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/slde" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/bajupria"
-                        android:layout_width="90dp"
-                        android:layout_height="75dp"
-                        android:src="@drawable/manshirt" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/bajupriatext"
-                        android:layout_width="match_parent"
+                        android:id="@+id/kategioru"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_extralight"
-                        android:gravity="center"
-                        android:text="Man Shirt"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Category"
                         android:textColor="#223263"
-                        android:textSize="9sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/dress"
-                        android:layout_width="90dp"
-                        android:layout_height="75dp"
-                        android:src="@drawable/dress" />
+                        android:textColorLink="#223263"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/dresstext"
-                        android:layout_width="match_parent"
+                        android:id="@+id/morkat2"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_extralight"
-                        android:gravity="center"
-                        android:text="Dress"
-                        android:textColor="#223263"
-                        android:textSize="9sp" />
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="right"
+                        android:text="More Category"
+                        android:textColor="#40BFFF"
+                        android:textColorLink="#223263"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.947"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </LinearLayout>
 
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/bajupria"
+                                android:layout_width="90dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/manshirt" />
+
+                            <TextView
+                                android:id="@+id/bajupriatext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_extralight"
+                                android:gravity="center"
+                                android:text="Man Shirt"
+                                android:textColor="#223263"
+                                android:textSize="9sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/dress"
+                                android:layout_width="90dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/dress" />
+
+                            <TextView
+                                android:id="@+id/dresstext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_extralight"
+                                android:gravity="center"
+                                android:text="Dress"
+                                android:textColor="#223263"
+                                android:textSize="9sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/manwok"
+                                android:layout_width="90dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/manwok" />
+
+                            <TextView
+                                android:id="@+id/tmanwoktex"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:fontFamily="@font/poppins_extralight"
+                                android:gravity="center"
+                                android:text="Man Work Equipment"
+                                android:textColor="#223263"
+                                android:textSize="9sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/tascewe"
+                                android:layout_width="90dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/wmanbag" />
+
+                            <TextView
+                                android:id="@+id/texttascewe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_extralight"
+                                android:gravity="center"
+                                android:text="Woman Bag"
+                                android:textColor="#223263"
+                                android:textSize="9sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/spatucowo"
+                                android:layout_width="90dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/spatucwo" />
+
+                            <TextView
+                                android:id="@+id/spatucowotext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_extralight"
+                                android:gravity="center"
+                                android:text="Man Shoes"
+                                android:textColor="#223263"
+                                android:textSize="9sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageView6"
+                                android:layout_width="90dp"
+                                android:layout_height="75dp"
+
+                                android:src="@drawable/spatuhigh" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_extralight"
+                                android:gravity="center"
+                                android:text="High Heels"
+                                android:textColor="#223263"
+                                android:textSize="8sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/manwok"
-                        android:layout_width="90dp"
-                        android:layout_height="75dp"
-                        android:src="@drawable/manwok" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tmanwoktex"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:fontFamily="@font/poppins_extralight"
-                        android:gravity="center"
-                        android:text="Man Work Equipment"
-                        android:textColor="#223263"
-                        android:textSize="9sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/tascewe"
-                        android:layout_width="90dp"
-                        android:layout_height="75dp"
-                        android:src="@drawable/wmanbag" />
-
-                    <TextView
-                        android:id="@+id/texttascewe"
-                        android:layout_width="match_parent"
+                        android:id="@+id/flash"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_extralight"
-                        android:gravity="center"
-                        android:text="Woman Bag"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Flash Sale"
                         android:textColor="#223263"
-                        android:textSize="9sp" />
+                        android:textColorLink="#223263"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lhat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="right"
+                        android:text="See More"
+                        android:textColor="#40BFFF"
+                        android:textColorLink="#223263"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.947"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/spatukining"
+                                android:layout_width="120sp"
+                                android:layout_height="120sp"
+
+                                android:src="@drawable/spatukuining" />
+
+
+                            <TextView
+                                android:id="@+id/spatukuningtex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="FS - Nike Air Max 270 React..."
+                                android:textColor="#223263"
+
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/spatukuningtexharga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="$299,43"
+                                android:textColor="#40BFFF"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView9"
+                                    android:layout_width="30sp"
+                                    android:layout_height="wrap_content"
+
+                                    app:srcCompat="@drawable/diskonkuning" />
+
+                                <TextView
+                                    android:id="@+id/offfftex1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="left"
+                                    android:paddingLeft="5sp"
+                                    android:paddingTop="3sp"
+                                    android:text="24% Off"
+                                    android:textColor="#FB7181"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/tas"
+                                android:layout_width="120sp"
+                                android:layout_height="120sp"
+
+                                android:src="@drawable/tasmevvh" />
+
+
+                            <TextView
+                                android:id="@+id/tastex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="FS - QUILTED MAXI CROS..."
+                                android:textColor="#223263"
+
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tasharga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="$299,43"
+                                android:textColor="#40BFFF"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView19"
+                                    android:layout_width="30sp"
+                                    android:layout_height="wrap_content"
+
+                                    app:srcCompat="@drawable/diskonkuning" />
+
+                                <TextView
+                                    android:id="@+id/offfftex12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="left"
+                                    android:paddingLeft="5sp"
+                                    android:paddingTop="3sp"
+                                    android:text="24% Off"
+                                    android:textColor="#FB7181"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/spatumerah"
+                                android:layout_width="120sp"
+                                android:layout_height="120sp"
+
+                                android:src="@drawable/merahspatu" />
+
+
+                            <TextView
+                                android:id="@+id/spatmerahgtex"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="FS - Nike Air Max 270 React..."
+                                android:textColor="#223263"
+
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/spatukmerahtexharga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="$299,43"
+                                android:textColor="#40BFFF"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView29"
+                                    android:layout_width="30sp"
+                                    android:layout_height="wrap_content"
+
+                                    app:srcCompat="@drawable/diskonkuning" />
+
+                                <TextView
+                                    android:id="@+id/offfftex13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="left"
+                                    android:paddingLeft="5sp"
+                                    android:paddingTop="3sp"
+                                    android:text="24% Off"
+                                    android:textColor="#FB7181"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mega"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Mega Sale"
+                        android:textColor="#223263"
+                        android:textColorLink="#223263"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/megahat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="right"
+                        android:text="See More"
+                        android:textColor="#40BFFF"
+                        android:textColorLink="#223263"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.947"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/tasmerah"
+                                android:layout_width="120sp"
+                                android:layout_height="120sp"
+
+                                android:src="@drawable/tasmerah" />
+
+
+                            <TextView
+                                android:id="@+id/tasmerahtext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="MS - Nike Air Max 270 React..."
+                                android:textColor="#223263"
+
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tasmerahtexharga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="$299,43"
+                                android:textColor="#40BFFF"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView10"
+                                    android:layout_width="30sp"
+                                    android:layout_height="wrap_content"
+
+                                    app:srcCompat="@drawable/diskonkuning" />
+
+                                <TextView
+                                    android:id="@+id/offfftextasmerah"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="left"
+                                    android:paddingLeft="5sp"
+                                    android:paddingTop="3sp"
+                                    android:text="24% Off"
+                                    android:textColor="#FB7181"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/spatu"
+                                android:layout_width="120sp"
+                                android:layout_height="120sp"
+
+                                android:src="@drawable/spatusimple" />
+
+
+                            <TextView
+                                android:id="@+id/spatutext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="MS - Nike Air Max 270 React..."
+                                android:textColor="#223263"
+
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/spatutexharga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="$299,43"
+                                android:textColor="#40BFFF"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView11"
+                                    android:layout_width="30sp"
+                                    android:layout_height="wrap_content"
+
+                                    app:srcCompat="@drawable/diskonkuning" />
+
+                                <TextView
+                                    android:id="@+id/offfftexspatu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="left"
+                                    android:paddingLeft="5sp"
+                                    android:paddingTop="3sp"
+                                    android:text="24% Off"
+                                    android:textColor="#FB7181"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="1"
+                            android:background="@drawable/box"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/spatuijo"
+                                android:layout_width="120sp"
+                                android:layout_height="120sp"
+
+                                android:src="@drawable/spatuiio" />
+
+
+                            <TextView
+                                android:id="@+id/spatuijotext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="MS - Nike Air Max 270 React..."
+                                android:textColor="#223263"
+
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/spatuijotexharga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:text="$299,43"
+                                android:textColor="#40BFFF"
+                                android:textSize="13sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView112"
+                                    android:layout_width="30sp"
+                                    android:layout_height="wrap_content"
+
+                                    app:srcCompat="@drawable/diskonkuning" />
+
+                                <TextView
+                                    android:id="@+id/offfftexspatu2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:gravity="left"
+                                    android:paddingLeft="5sp"
+                                    android:paddingTop="3sp"
+                                    android:text="24% Off"
+                                    android:textColor="#FB7181"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/rekomen" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10sp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/box"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/spatubiru"
+                            android:layout_width="160sp"
+                            android:layout_height="160sp"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/sepatubiru" />
+
+                        <ImageView
+                            android:id="@+id/bingtag"
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:src="@drawable/bintank" />
+
+
+                        <TextView
+                            android:id="@+id/spatubirutex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="Nike Air Max 270 React ENG"
+                            android:textColor="#223263"
+
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/spatubirutexharga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="$299,43"
+                            android:textColor="#40BFFF"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView99"
+                                android:layout_width="30sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/diskonkuning" />
+
+                            <TextView
+                                android:id="@+id/offfftex138"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:paddingLeft="5sp"
+                                android:paddingTop="3sp"
+                                android:text="24% Off"
+                                android:textColor="#FB7181"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10sp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/box"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/tasmerahh"
+                            android:layout_width="160sp"
+                            android:layout_height="160sp"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/tasmerah" />
+
+                        <ImageView
+                            android:id="@+id/bingtag22"
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:src="@drawable/bintank" />
+
+
+                        <TextView
+                            android:id="@+id/tasmerahhtex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="Nike Air Max 270 React ENG"
+                            android:textColor="#223263"
+
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tasmerahhtexharga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="$299,43"
+                            android:textColor="#40BFFF"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView999"
+                                android:layout_width="30sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/diskonkuning" />
+
+                            <TextView
+                                android:id="@+id/offfftex138tasmerahh"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:paddingLeft="5sp"
+                                android:paddingTop="3sp"
+                                android:text="24% Off"
+                                android:textColor="#FB7181"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="10sp">
 
-                    <ImageView
-                        android:id="@+id/spatucowo"
-                        android:layout_width="90dp"
-                        android:layout_height="75dp"
-                        android:src="@drawable/spatucwo" />
 
-                    <TextView
-                        android:id="@+id/spatucowotext"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_extralight"
-                        android:gravity="center"
-                        android:text="Man Shoes"
-                        android:textColor="#223263"
-                        android:textSize="9sp" />
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10sp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/box"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/domped"
+                            android:layout_width="160sp"
+                            android:layout_height="160sp"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/domped" />
+
+                        <ImageView
+                            android:id="@+id/bingtagdomped"
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:src="@drawable/bintank" />
+
+
+                        <TextView
+                            android:id="@+id/dompedtex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="Nike Air Max 270 React ENG"
+                            android:textColor="#223263"
+
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/dompedtexharga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="$299,43"
+                            android:textColor="#40BFFF"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView99domped"
+                                android:layout_width="30sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/diskonkuning" />
+
+                            <TextView
+                                android:id="@+id/offfftex138domped"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:paddingLeft="5sp"
+                                android:paddingTop="3sp"
+                                android:text="24% Off"
+                                android:textColor="#FB7181"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10sp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/box"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/spatured"
+                            android:layout_width="160sp"
+                            android:layout_height="160sp"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/patured" />
+
+                        <ImageView
+                            android:id="@+id/bingtagspatured"
+                            android:layout_width="70sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:src="@drawable/bintank" />
+
+
+                        <TextView
+                            android:id="@+id/spatubirutexspatured"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="Nike Air Max 270 React ENG"
+                            android:textColor="#223263"
+
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/texhargaspatured"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="left"
+                            android:text="$299,43"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:textColor="#40BFFF"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageView
+                                android:id="@+id/imageView99spatured"
+                                android:layout_width="30sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/diskonkuning" />
+
+                            <TextView
+                                android:id="@+id/offfftex138spatured"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="left"
+                                android:paddingLeft="5sp"
+                                android:paddingTop="3sp"
+                                android:text="24% Off"
+                                android:textColor="#FB7181"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="90dp"
-                        android:layout_height="75dp"
-
-                        android:src="@drawable/spatuhigh" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_extralight"
-                        android:gravity="center"
-                        android:text="High Heels"
-                        android:textColor="#223263"
-                        android:textSize="8sp" />
-
-                </LinearLayout>
 
             </LinearLayout>
-
-
-        </HorizontalScrollView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/flash"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Flash Sale"
-                android:textColor="#223263"
-                android:textColorLink="#223263"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.049"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/lhat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/poppins_bold"
-                android:gravity="right"
-                android:text="See More"
-                android:textColor="#40BFFF"
-                android:textColorLink="#223263"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.947"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </LinearLayout>
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:scrollbars="none"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="10sp"
-                    android:layout_weight="1"
-                    android:background="@drawable/box"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:id="@+id/spatukining"
-                        android:layout_width="120sp"
-                        android:layout_height="120sp"
-
-                        android:src="@drawable/spatukuining" />
-
-
-                    <TextView
-                        android:id="@+id/spatukuningtex"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_bold"
-                        android:gravity="left"
-                        android:text="FS - Nike Air Max 270 React..."
-                        android:textColor="#223263"
-
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/spatukuningtexharga"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_bold"
-                        android:gravity="left"
-                        android:text="$299,43"
-                        android:textColor="#40BFFF"
-                        android:textSize="13sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView9"
-                            android:layout_width="30sp"
-                            android:layout_height="wrap_content"
-
-                            app:srcCompat="@drawable/diskonkuning" />
-
-                        <TextView
-                            android:id="@+id/offfftex1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_bold"
-                            android:gravity="left"
-                            android:paddingLeft="5sp"
-                            android:paddingTop="3sp"
-                            android:text="24% Off"
-                            android:textColor="#FB7181"
-                            android:textSize="8sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginRight="10sp"
-                    android:layout_weight="1"
-                    android:background="@drawable/box"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:id="@+id/tas"
-                        android:layout_width="120sp"
-                        android:layout_height="120sp"
-
-                        android:src="@drawable/tasmevvh" />
-
-
-                    <TextView
-                        android:id="@+id/tastex"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_bold"
-                        android:gravity="left"
-                        android:text="FS - QUILTED MAXI CROS..."
-                        android:textColor="#223263"
-
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/tasharga"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_bold"
-                        android:gravity="left"
-                        android:text="$299,43"
-                        android:textColor="#40BFFF"
-                        android:textSize="13sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView19"
-                            android:layout_width="30sp"
-                            android:layout_height="wrap_content"
-
-                            app:srcCompat="@drawable/diskonkuning" />
-
-                        <TextView
-                            android:id="@+id/offfftex12"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_bold"
-                            android:gravity="left"
-                            android:paddingLeft="5sp"
-                            android:paddingTop="3sp"
-                            android:text="24% Off"
-                            android:textColor="#FB7181"
-                            android:textSize="8sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10sp"
-                    android:layout_marginRight="10sp"
-                    android:layout_weight="1"
-                    android:background="@drawable/box"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:id="@+id/spatumerah"
-                        android:layout_width="120sp"
-                        android:layout_height="120sp"
-
-                        android:src="@drawable/merahspatu" />
-
-
-                    <TextView
-                        android:id="@+id/spatmerahgtex"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_bold"
-                        android:gravity="left"
-                        android:text="FS - Nike Air Max 270 React..."
-                        android:textColor="#223263"
-
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:id="@+id/spatukmerahtexharga"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_bold"
-                        android:gravity="left"
-                        android:text="$299,43"
-                        android:textColor="#40BFFF"
-                        android:textSize="13sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView29"
-                            android:layout_width="30sp"
-                            android:layout_height="wrap_content"
-
-                            app:srcCompat="@drawable/diskonkuning" />
-
-                        <TextView
-                            android:id="@+id/offfftex13"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_bold"
-                            android:gravity="left"
-                            android:paddingLeft="5sp"
-                            android:paddingTop="3sp"
-                            android:text="24% Off"
-                            android:textColor="#FB7181"
-                            android:textSize="8sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-        </HorizontalScrollView>
-
-
+        </ScrollView>
     </LinearLayout>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

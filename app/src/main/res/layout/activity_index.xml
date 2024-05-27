@@ -493,6 +493,7 @@
                         </LinearLayout>
 
                         <LinearLayout
+                            android:id="@+id/ditel"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="10sp"
@@ -1098,10 +1099,11 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/dtel"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginRight="10sp"
 
+                        android:layout_marginRight="10sp"
                         android:layout_weight="1"
                         android:background="@drawable/box"
                         android:orientation="vertical"

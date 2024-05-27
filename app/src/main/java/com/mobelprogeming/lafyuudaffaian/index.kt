@@ -3,6 +3,7 @@ package com.mobelprogeming.lafyuudaffaian
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -26,6 +27,17 @@ class index : AppCompatActivity() {
         val Fv = findViewById<ImageView>(R.id.lope)
         Fv.setOnClickListener{
             val intent = Intent(this, favorit::class.java)
+            startActivity(intent)
+        }
+        val dt = findViewById<LinearLayout>(R.id.ditel)
+        dt.setOnClickListener{
+            val intent = Intent(this, ProuctDetail::class.java)
+            startActivity(intent)
+        }
+
+        val dte = findViewById<LinearLayout>(R.id.dtel)
+        dte.setOnClickListener{
+            val intent = Intent(this, ProuctDetail::class.java)
             startActivity(intent)
         }
     }
